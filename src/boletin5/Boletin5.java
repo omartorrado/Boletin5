@@ -67,14 +67,14 @@ public class Boletin5 {
         e6_1.tipo();
             case 7:
         //Ejercicio7
-        int n=0;
-        JFrame frame=new JFrame();
-        JButton b1=new JButton();
-        frame.
-        
-        switch (n){
-            case 1:
-        }
+//        int n=0;
+//        JFrame frame=new JFrame();
+//        JButton b1=new JButton();
+//        frame.
+//        
+//        switch (n){
+//            case 1:
+//        }
       }
     }
 }
