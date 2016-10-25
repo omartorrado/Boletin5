@@ -34,6 +34,8 @@ public class Ejercicio4 {
 //            else System.out.println(nombre1+" y "+nombre2+" pesan lo mismo");
 //        }
 //    }
+    //mismo ejercicio de arriba pèro usando un comparador de objetos
+    //en lugar de comparar atributos dobles (peso1, peso2) de la clase
     String nombre;
     float peso;
     
