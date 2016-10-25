@@ -7,6 +7,7 @@ package boletin5;
 
 import java.awt.GridLayout;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -29,14 +30,17 @@ public class Boletin5 {
         //da error, si no metemos un numero da error tb
         //si escribimos ,56 funciona
         e1.positivo();
+        break;
             case 2:
         //Ejercicio2
         Ejercicio2 e2=new Ejercicio2();
         e2.e2();
+        break;
             case 3:
         //Ejercicio3
         Ejercicio3 e3=new Ejercicio3();
         e3.e3();
+        break;
             case 4:
         //Ejercicio4
         //Revisar para comparar dos objetos persona que contengan nombre y peso
@@ -54,22 +58,26 @@ public class Boletin5 {
         e4_2.Comp(e4_1);
         Ejercicio4 e4_3=new Ejercicio4("Juan",80);
         e4_2.Comp(e4_3);
+        break;
             case 5:
         //Ejercicio5
         Ejercicio5 e5=new Ejercicio5();
         e5.e5(5, 7, 9);
         e5.e5(-9, 8, 7);
         e5.e5(5, 8, 5);
+        break;
             case 6:
         //Ejercicio6
         Ejercicio6 e6=new Ejercicio6("Cerveza",94);
         e6.tipo();
         Ejercicio6 e6_1=new Ejercicio6("Vino",400);
         e6_1.tipo();
+        break;
             case 7:
         //Ejercicio7
         Ejercicio7 e7=new Ejercicio7();
         int n=0;
+        JFrame frame1=new JFrame();
         JPanel botones=new JPanel();
         GridLayout grid=new GridLayout(0,2);
         botones.setLayout(grid);
@@ -79,12 +87,19 @@ public class Boletin5 {
         botones.add(b1);
         botones.add(b2);
         botones.add(b3);
+        frame1.add(botones);
+        frame1.setLayout(grid);
         botones.setVisible(true);
+        b1.setVisible(true);
+        frame1.setVisible(true);
         
         
         switch (n){
             case 1:
         }
+        //Por que ejecuta el default al usar el 7?
+        default:
+            System.out.println("Ese ejercicio no existe");        
       }
     }
 }
