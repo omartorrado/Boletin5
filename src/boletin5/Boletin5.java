@@ -5,9 +5,10 @@
  */
 package boletin5;
 
+import java.awt.GridLayout;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -67,14 +68,23 @@ public class Boletin5 {
         e6_1.tipo();
             case 7:
         //Ejercicio7
-//        int n=0;
-//        JFrame frame=new JFrame();
-//        JButton b1=new JButton();
-//        frame.
-//        
-//        switch (n){
-//            case 1:
-//        }
+        Ejercicio7 e7=new Ejercicio7();
+        int n=0;
+        JPanel botones=new JPanel();
+        GridLayout grid=new GridLayout(0,2);
+        botones.setLayout(grid);
+        JButton b1=new JButton("Cuadrado");
+        JButton b2=new JButton("Triangulo");
+        JButton b3=new JButton("Circulo");
+        botones.add(b1);
+        botones.add(b2);
+        botones.add(b3);
+        botones.setVisible(true);
+        
+        
+        switch (n){
+            case 1:
+        }
       }
     }
 }

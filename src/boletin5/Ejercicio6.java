@@ -17,19 +17,40 @@ public class Ejercicio6 {
         nombre=n; ventas=v;
     }
     
-    public void tipo(){
+//    public void tipo(){
+//        if(ventas<=100){
+//            System.out.println("Articulo de consumo bajo");
+//        }
+//        else if(ventas>100&&ventas<=500){
+//            System.out.println("Articulo de consumo medio");
+//        }
+//        else if(ventas>500&&ventas<=1000){
+//            System.out.println("Articulo de consumo alto");
+//        }
+//        else if (ventas>1000){
+//            System.out.println("Articulo de primera necesidad");
+//        }
+//        else System.out.println("Error");
+//    }
+    //Otra manera de hacerlo
+        public void tipo(){
+            //le doy un valor a mensaje pq sino puede darse el caso de que no
+            //se le llegue a asignar un valor y de error
+            String mensaje="consumo";
         if(ventas<=100){
-            System.out.println("Articulo de consumo bajo");
+            mensaje="consumo bajo";
         }
         else if(ventas>100&&ventas<=500){
-            System.out.println("Articulo de consumo medio");
+            mensaje="consumo medio";
         }
         else if(ventas>500&&ventas<=1000){
-            System.out.println("Articulo de consumo alto");
+            mensaje="consumo alto";
         }
         else if (ventas>1000){
-            System.out.println("Articulo de primera necesidad");
+            mensaje="primera necesidad";
         }
-        else System.out.println("Error");
+        System.out.println("Es un articulo de "+mensaje);
     }
+        //ninguna de las opciones me gusta, se puede hacer mejor. Por ejemplo
+        //no contempla que hacer con numeros negativos
 }
