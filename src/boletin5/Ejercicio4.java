@@ -44,12 +44,15 @@ public class Ejercicio4 {
     }
     
     public void Comp(Ejercicio4 b){
+        //sustituyo las dols comparaciones de abajo por una unica linea que da
+        //la diferencia en ambos casos usando un absolute
+        float dif= Math.abs(this.peso-b.peso);
         if(this.peso>b.peso){
-            float dif=this.peso-b.peso;
+//            float dif=this.peso-b.peso;
             System.out.println(this.nombre+" pesa "+this.peso+"Kg, "+dif+"Kg mas que "+b.nombre);
         }
         else if (b.peso>this.peso){
-            float dif=b.peso-this.peso;
+//            float dif=b.peso-this.peso;
             System.out.println(b.nombre+" pesa "+b.peso+"Kg, "+dif+"Kg mas que "+this.nombre);
         }
         else System.out.println("Ambos pesan lo mismo");
