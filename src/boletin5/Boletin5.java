@@ -6,7 +6,10 @@
 package boletin5;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -84,6 +87,14 @@ public class Boletin5 {
 //        JButton b1=new JButton("Cuadrado");
 //        JButton b2=new JButton("Triangulo");
 //        JButton b3=new JButton("Circulo");
+//        b1.addActionListener(new ActionListener()
+//        {
+//          public void actionPerformed(ActionEvent e)
+//          {
+//
+//          }
+//        });
+//
 //        frame1.add(b1);
 //        frame1.add(b2);
 //        frame1.add(b3);
