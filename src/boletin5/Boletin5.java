@@ -9,7 +9,6 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 /**
  *
@@ -76,27 +75,36 @@ public class Boletin5 {
             case 7:
         //Ejercicio7
         Ejercicio7 e7=new Ejercicio7();
-        int n=0;
-        JFrame frame1=new JFrame();
-        JPanel botones=new JPanel();
-        GridLayout grid=new GridLayout(0,2);
-        botones.setLayout(grid);
-        JButton b1=new JButton("Cuadrado");
-        JButton b2=new JButton("Triangulo");
-        JButton b3=new JButton("Circulo");
-        botones.add(b1);
-        botones.add(b2);
-        botones.add(b3);
-        frame1.add(botones);
-        frame1.setLayout(grid);
-        botones.setVisible(true);
-        b1.setVisible(true);
-        frame1.setVisible(true);
-        
-        
+        int n;
+        //¿Como se hace para que al pulsar un boton cambie el valor de la 
+        //variable n?
+//        JFrame frame1=new JFrame();
+//        GridLayout grid=new GridLayout(0,3);
+//        frame1.setLayout(grid);
+//        JButton b1=new JButton("Cuadrado");
+//        JButton b2=new JButton("Triangulo");
+//        JButton b3=new JButton("Circulo");
+//        frame1.add(b1);
+//        frame1.add(b2);
+//        frame1.add(b3);
+//        frame1.setVisible(true);
+//        frame1.pack();
+        n=Integer.parseInt(JOptionPane.showInputDialog("Elige que quieres calcular:\n1-Area de un "
+                + "cuadrado\n2-Area de un triangulo\n3-Area de un circulo"));
         switch (n){
             case 1:
+                e7.cuadrado();
+                break;
+            case 2:
+                e7.triangulo();
+                break;
+            case 3:
+                e7.circulo();
+                break;
+            default:
+                break;
         }
+        break;
         //Por que ejecuta el default al usar el 7?
         default:
             System.out.println("Ese ejercicio no existe");        
