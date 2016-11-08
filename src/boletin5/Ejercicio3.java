@@ -14,13 +14,26 @@ import java.util.Scanner;
 public class Ejercicio3 {
     Scanner sc1= new Scanner(System.in);
     
-    public void e3(){
+//    public void e3(){
+//        float n=sc1.nextFloat();
+//        if (n>0){
+//            System.out.println("+");
+//        }
+//        else{
+//            if (n==0){
+//                System.out.println("0");
+//            }            
+//            else{
+//                System.out.println("-");
+//            }
+//        }
+//    }
+        public void e3(){
         float n=sc1.nextFloat();
         if (n>0){
             System.out.println("+");
         }
-        else{
-            if (n==0){
+        else if (n==0){
                 System.out.println("0");
             }            
             else{
@@ -28,4 +41,4 @@ public class Ejercicio3 {
             }
         }
     }
-}
+
