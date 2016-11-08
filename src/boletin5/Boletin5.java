@@ -5,6 +5,7 @@
  */
 package boletin5;
 
+import java.awt.BorderLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -64,13 +65,19 @@ public class Boletin5 {
         
         //Ejercicio7
         int n=0;
-        JFrame frame=new JFrame();
-        JButton b1=new JButton();
+        JFrame frame=new JFrame("Ejercicio 7");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JButton b1=new JButton("Calcular el área de un cuadrado");
+        JButton b2=new JButton("Calcular el área de un triángulo");
+        JButton b3=new JButton("Calcular el área de un circulo");
+        frame.add(b1,BorderLayout.WEST) ; frame.add(b2,BorderLayout.CENTER); frame.add(b3,BorderLayout.EAST); 
+        frame.pack(); 
+        b1.setLocation(0,0);
+        b2.setLocation(100,100);
+        b3.setLocation(2,2);
+        frame.pack();
+        frame.setVisible(true);
         
-        switch (n){
-            case 1:
-        }
+        
     }
-}
-    
-
+}  
